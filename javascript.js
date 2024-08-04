@@ -1,9 +1,13 @@
 //create new function getComputerChoice
 function getComputerChoice() {
     //obtain random number between 0 and 1 and multiply by 3
+    let x = Math.floor(Math.random()*3);
     //if random number is less than 1, return rock
+    if (x < 1) return "rock";
     //if random number is >= 1 but <2, return scissors
+    if (x < 2) return "scissors";
     //if random number is >= 2, return paper
+    else return "paper";
 }
 
 //create new function getPlayerChoice
@@ -45,3 +49,4 @@ function playGame() {
     //report final score
 }
 
+console.log(getComputerChoice());
