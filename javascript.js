@@ -12,12 +12,20 @@ function getComputerChoice() {
 
 //create new function getPlayerChoice
 function getPlayerChoice() {
-    //prompt user to pick from rock, paper, and scissors
-    //lower-case whatever they input
-    //"r" or "rock" returns rock
-    //"s" or "scissors" returns scissors
-    //"p" or "paper" returns paper
+    let y = 0; 
+    while (y != "r" && y != "rock" && y != "s" && y != "scissors" && y != "p" && y != "paper") {
+        //prompt user to pick from rock, paper, and scissors
+        y = prompt("Please choose (r)ock, (p)aper, or (s)cissors: ");
+        //lower-case whatever they input
+        y = y.toLowerCase();
+        //"r" or "rock" returns rock
+        if (y == "r" || y == "rock") return "rock";
+        //"s" or "scissors" returns scissors
+        if (y == "s" || y == "scissors") return "scissors";
+        //"p" or "paper" returns paper
+        if (y == "p" || y == "paper") return "paper";
     //otherwise, ask again
+    }
 }
 
 //create new function updateScore
@@ -50,3 +58,4 @@ function playGame() {
 }
 
 console.log(getComputerChoice());
+console.log(getPlayerChoice());
