@@ -34,3 +34,11 @@ ul {
 #playerscore, #computerscore {
     margin-left: auto;
 }
+
+button {
+    margin: 8px;
+}
+
+.prompt {
+    margin-bottom: 0px;
+}
