@@ -4,9 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Odin Rock Paper Scissors Project</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
+        <h1>Rock, Paper, Scissors</h1>
+        <div class="scoreboard">
+            <div class="leftbox">
+            <p class="prompt">Select one of the options below: </p>
+            <button>Rock</button>
+            <button>Paper</button>
+            <button>Scissors</button>
+            </div>
+            <div class="rightbox">
+            <ul>
+                <li class="score"> Your score: <div id="playerscore">0</div></li>
+                <li class="score"> Computer score: <div id="computerscore">0</div></li>
+            </ul>
+            </div>
+        </div>
         <script src="javascript.js"></script>
     </body>
 </html>

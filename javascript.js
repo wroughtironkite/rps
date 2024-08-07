@@ -66,17 +66,11 @@ function playRound() {
     updateScore(PlayerChoice, ComputerChoice);
 }
 
-//create function to play a game of five rounds
-function playGame() {
-    //loop until five rounds have been played
-    for (let roundnumber = 0; roundnumber < 5; roundnumber++) {
-        playRound();
-    }
-}
+
 
 //set initial playerScore and compScore to 0
 let playerScore = 0;
 let compScore = 0;
-playGame();
+
 //report final score
 console.log("Out of 5 games, you won " + playerScore + " games and the computer won " + compScore + " games.");

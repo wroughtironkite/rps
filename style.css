@@ -1,0 +1,36 @@
+h1 {
+  text-align: center;  
+  background-color: lightblue;
+  margin: 0;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightcyan;
+    margin: 0;
+}
+
+.leftbox {
+    margin-left: 8px;
+    margin-right: auto;
+}
+
+.rightbox {
+    margin-left: auto;
+    margin-right: 8px;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+.score {
+    display: flex;
+    gap: 10px;
+}
+
+#playerscore, #computerscore {
+    margin-left: auto;
+}
